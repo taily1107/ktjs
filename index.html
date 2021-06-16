@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/Sortable/1.13.0/Sortable.min.js"></script>
+</head>
+
+<body>
+  <div id="dropzone">
+    <div id="record-id-01" class="node" draggable="true"><img src="./img/anh-anime-36.jpg" alt=""></div>
+    <div id="record-id-02" class="node" draggable="true"><img src="./img/Ilumia 2.jpg" alt=""></div>
+    <div id="record-id-03" class="node" draggable="true"><img src="./img/images (1).jpg" alt=""></div>
+    <div id="record-id-04" class="node" draggable="true"><img src="./img/tải xuống.jpg" alt=""></div>
+    <div id="record-id-05" class="node" draggable="true"><img src="./img/images.jpg" alt=""></div>
+  </div>
+</body>
+<script>
+  const dragArea = document.querySelector('#dropzone');
+  new Sortable(dragArea, {
+    Animation: 350
+  });
+</script>
+<style>
+  body {
+    margin: 0px;
+    padding: 0;
+  }
+
+  #dropzone {
+    background-color: aqua;
+    background-image: url("./img/sa_pixar_virtualbg_coco_16x9_9ccd7110.jpeg");
+    background-repeat: no-repeat;
+    background-size: cover;
+    padding-left: 40%;
+    padding-top: 100px;
+    min-height: 100vh;
+    justify-items: center center;
+    align-items: center;
+    display: block;
+
+  }
+
+  .node {
+    background-color: rgba(189, 238, 223, 0.5);
+    max-width: 250px;
+    margin-left: 40%;
+    border: 1px solid;
+    margin: 2px;
+    padding: 10px 0;
+    text-align: center;
+    margin-bottom: 20px;
+    border: none;
+    
+  }
+
+  .node img {
+    width: 230px;
+    height: 100px;
+  }
+
+  @media only screen and (max-width: 600px) {
+    #dropzone {
+      background-color: aqua;
+      background-image: url("./img/sa_pixar_virtualbg_coco_16x9_9ccd7110.jpeg");
+      background-repeat: no-repeat;
+      background-size: cover;
+      padding-left: 20%;
+      padding-top: 100px;
+      min-height: 100vh;
+      justify-items: center center;
+      align-items: center;
+      display: block;
+
+    }
+
+  }
+</style>
+
+</html>
